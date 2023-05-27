@@ -1,0 +1,535 @@
+@font-face {
+    font-family: 'medium';
+    src: url(font/NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+    font-family: 'bold';
+    src: url(font/NeueHaasDisplayBold.ttf);
+}
+@font-face {
+    font-family: 'book';
+    src: url(font/NeueHaasDisplayRoman.ttf);
+}
+
+/* =========================================== BTN =========================================== */
+
+#btn {
+    display: flex;
+    align-items: center;
+    padding: 14px 18px;
+    margin-top: 24px;
+    font-size: 14px;
+    background-color: #FBEB09;
+    font-family: 'medium';
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+    color: black;
+    transition: 350ms;
+    letter-spacing: .5px;
+}
+
+#btn object {
+    margin-left: 10px;
+}
+
+#btn:hover {
+    background-color: #fafafa;
+}
+
+
+/* =========================================== FONT =========================================== */
+
+#h4 {
+    font-size:16px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-family: 'medium';
+}
+
+#paragraph {
+    font-family: 'book';
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    line-height: 19px;
+    margin-bottom: 35px;
+}
+
+#ft-list {
+    font-size: 42px;
+    font-family: 'medium';
+    font-weight: 600;
+    letter-spacing: .5px;
+    color: white;
+}
+
+a {
+    font-size: 16px;
+    font-family: 'book';
+    text-decoration: none;
+    color: #FBEB09;
+    letter-spacing: .5px;
+}
+
+#link {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'book';
+    text-decoration: none;
+    color: #FBEB09;
+    letter-spacing: .7px;
+}
+
+/* =========================================== MAIN =========================================== */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #070707;
+}
+
+nav {
+    width: 100%;
+    height: 78px;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 900px;
+    overflow: hidden;
+    height: 80%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    color: white;
+}
+
+ul li a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    font-family: 'medium';
+    text-transform: uppercase;
+}
+
+li {
+    overflow: hidden;
+}
+
+a:hover {
+    opacity: .8;
+}
+
+li a::after {
+    content: '';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    transform: translate(50%);
+    border-bottom: 2px solid white;
+    transition: all 300ms ease-in-out;
+}
+
+li a:hover::after {
+    width: 80%;
+    opacity: 1;
+}
+
+/* =============================== HOMEPAGE =============================== */
+
+.line {
+    margin-left: 42px;
+    width: 1px;
+    height: 1170%;
+    background-color: #FBEB09;
+    position: absolute;
+}
+
+.beranda {
+    margin: auto;
+    padding: 0px 42px;
+    height: auto;
+    overflow: hidden;
+}
+
+
+.banner img {
+    width: 470px;
+    opacity: .7;
+    border: 1px solid;
+    margin-left: 200px;
+}
+
+.home-container {
+    margin-top: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headline {
+    font-family: 'medium';
+    font-size: 39px;
+    color: white;
+}
+
+.headline p {
+    font-size: 16px;
+    font-family: 'book';
+    margin-top: -7px;
+}
+
+/* =============================== YELLOW LINE =============================== */
+
+
+.yellow {
+    position: absolute;
+    left: 0;
+    display: flex;align-items: start;justify-content: center;
+    margin-top: -5px;
+    width:100%;
+    padding: 44px 0px;
+    background-color: #FBEB09;
+    text-transform: uppercase;
+}
+
+.row-1  {
+    margin-right: 68px;
+    width: 300px;
+    font-family: 'bold';
+}
+
+.row-1 h2 {
+    font-size: 53px;
+}
+
+.row-1 h4 {
+    font-size: 16px;
+    font-family: 'medium';
+    line-height: 21px;
+}
+
+
+/* =============================== TEXT HEADLINE =============================== */
+
+.home-container-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top:307px;
+}
+
+#home-txt{
+    width: 100%;
+    font-size:155px;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-family: 'medium';
+    padding: 0px 23px;
+}
+
+
+
+/* =============================== MOVIE BANNER =============================== */
+
+.mvi-banner {
+    margin-top: 362px;
+    margin-bottom: 300px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-video{
+    width: 96.7%;
+    height: 435px;
+    background-color: #ff00002a;
+    object-fit: cover;
+    position: absolute;
+    left: 42.5px;
+}
+
+.mvi-banner .black {
+    position: absolute;
+    width: 96.7%;
+    height: 435px;
+    background-color: #1d1d1d50;
+    left: 42px;
+}
+
+.banner-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.mvi-banner a {
+    position: absolute;
+    text-decoration: none;
+}
+
+/* =============================== PIC =============================== */
+
+
+.list-menu-pic{
+    border: 1px solid;
+    padding: 0px 0px 0px 42px;
+    margin-top: 123px;
+}
+
+.pic-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.image-pic-row {
+    height: 415px;
+    width: 50%;
+    background-color: #fff;
+}
+
+.image-pic-row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fill-txt {
+    height: 356px;
+    width: 50%;
+    color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head-fill {
+    margin-bottom: 40px;
+    width: 332px;
+}
+
+
+.fill-txt object {
+    width: 11px;
+    margin-left: 7px;
+}
+
+/* =============================== FEATURED PIC =============================== */
+
+.featured-banner {
+    padding: 0px 0px 0px 42px;
+    font-family: 'medium';
+    margin-top: 120px;
+    margin-bottom: -70px;
+}
+
+.featured-banner h3 {
+    color: white;
+    font-size: 62px;
+    margin-left: 42px;
+}
+
+.ft-banner {
+    border: solid 1px;
+    height: 700px;
+    width: 100%;
+    background-color: #302f2f;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+
+.ft-banner video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ft-headline {
+    position: absolute;
+    width: 95%;
+    padding: 42px 42px;
+    background: linear-gradient(180.07deg, rgba(15, 15, 15, 0) 6.85%, rgba(15, 15, 15, 0.979) 99.94%);
+    color: white;
+    overflow: auto;
+}
+
+.banner-img {
+    background-color: #c4c4c433;
+    width: 100vw;
+    height: 700px;
+    overflow: hidden;
+}
+
+
+
+.head-gradient {
+    margin-bottom: 23px;
+}
+
+
+
+/* =============================== LIST MENU =============================== */
+
+.ft-main-list {
+    margin-top: 60px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    
+}
+
+.ft-container-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 185px;
+    height: 100%;
+}
+
+.ft-img-row {
+    display: flex;
+    
+}
+
+.ft-container-1 {
+    width: 250px;
+    height: 300px;
+    padding: 2px;
+    margin-left: 23px;
+}
+
+/* =============================== TEMPAT GAMBAR LIST =============================== */
+
+.ft-cont-image {
+    border-radius: 5px;
+    margin-bottom: 14px;
+    height: 100%;
+    background-color: #fff;
+}
+
+.ft-cont-image img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* =============================== BOTTOM MVI BANENR =============================== */
+
+.bottom-mvi-banner {
+    margin-bottom: -82px;
+}
+
+/* =============================== FOOTER =============================== */
+
+.footer-box {
+    width: 82%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer-first-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    width: 100%;
+    background-color: #FBEB09;
+}
+
+.footer-form {
+    width: 500px;
+}
+
+.footer-form .input {
+    width: 82%;
+    display: flex;
+    align-items: start;
+}
+
+.footer-form input {
+    background:none;
+    border: none;
+    border-bottom: 1px solid;
+    width: 80%;
+    height: 38px;
+    margin-right: 23px;
+}
+
+.btn-email {
+    height: 42px;
+    padding: 0px 40px;
+    background: #000000;
+    border: none;
+    font-family: 'book';
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+/* =============================== SECOND FOOTER =============================== */
+
+
+.footer-box2 {
+    width: 82%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+
+.footer-second-row {
+    left: 0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width:100%;
+    padding: 72px 0px;
+    background-color: #070707;
+    text-transform: uppercase;
+    color: white;
+}
+
+.footer-row-info {
+    margin-right: 80px;
+    display: flex;
+}
+
+.footer-row-info .info {
+    margin-right: 80px;
+}
+
+.info object {
+    margin-top: 5px;
+    margin-right: 8px;
+    width: 20px;
+}
